@@ -210,7 +210,17 @@ border-radius: 10px;
     background: #f6e1fc;
     opacity: 98%;
 }
-
+.gallery .service{
+    margin-top: 15px;
+    border-style: dashed 2 px blue;
+    padding: 10px;
+}
+.gallery .service h3::before{
+    content: url(img/iconoest.jpg);
+    width: 1px;
+    padding-right: 5px;
+    color: rgb(146, 14, 146);
+}
 .contenedor-galeria{
     display: flex;
     flex-wrap: wrap;
@@ -382,8 +392,9 @@ footer{
         margin-bottom: 40px;
     }
     
-    .checklist-servicio{
+    .contenedor-sobremi{
         width: 80%;
+        display: inline;
     }
 
     .service{
@@ -450,7 +461,14 @@ footer{
     .agregar-imagen{
         width: 90%;
     }
-
+    #experiencia{
+        display: block;
+        width: 90%;
+        columns: 1;
+    }
+    #experiencia .service{
+        width: 90%;
+    }
     .social-media{
         width: 100%;
         justify-content: space-evenly;
